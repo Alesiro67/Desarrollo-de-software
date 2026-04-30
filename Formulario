@@ -1,0 +1,59 @@
+# Desarrollo-de-software
+Estudiante De Primer Año De Desarrollo De Software (CEAH, El Salvador, Ahuachapan, Ahuachapan Centro)
+
+<html>
+    <head>
+        <title>Formulario</title>
+    </head>
+    <body>
+        <form action="recibidor.php" method="post">
+            
+            <fieldset>
+                <legend>Datos basicos</legend>
+                <label>Nombre: 
+                    <input type="text" name="Nombre">
+                </label>
+                <br>
+                <label>Correo: 
+                    <input type="email" name="Correo">
+                </label>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Selección de países</legend>
+                <select name="paises">
+                    <option value="sv">El Salvador</option>
+                    <option value="mx">Mexico</option>
+                    <option value="fr">Francia</option>
+                </select>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Genero</legend>
+                <div>
+                    <input type="radio" id="Genero_masculino" name="genero" value="Masculino">
+                    <label for="Genero_masculino">Masculino</label>
+                </div>
+                <div>
+                    <input type="radio" id="Genero_femenino" name="genero" value="femenino">
+                    <label for="Genero_femenino">femenino</label>
+                </div>
+                <div>
+                    <input type="radio" id="otro_genero" name="genero" value="otro">
+                    <label for="otro_genero">Otro</label>
+                </div>
+                
+                <br>
+                <input type="checkbox" name="aceptar" value="si"> Acepto los terminos
+                
+                <br><br>
+                <label>Comentarios:</label><br>
+                <textarea name="comentario" rows="4" cols="50"></textarea>
+            </fieldset>
+            
+            <button type="submit">Enviar datos</button>
+            <button type="reset">Borrar todo</button>
+            
+        </form>
+    </body>
+</html>
